@@ -85,12 +85,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myblogs',
-        'USER':'root',
-        'PASSWORD':''
-    }
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'myblogs',
+#         'USER':'root',
+#         'PASSWORD':''
+#     }
 }
 DATABASES['default'] = dj_database_url.config(default='postgres://vekdsvavyjypzl:b5c0724907313dafe17d3628a81605457c046a77cd1a96395474001180ad4272@ec2-54-228-125-183.eu-west-1.compute.amazonaws.com:5432/d7nqnlmkhsonhg')
 # Password validation
