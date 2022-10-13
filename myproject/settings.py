@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-*i^z=i!7djhr3%v@$*v--6l5+28=4ku%2bmb839mq!29-r==d7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =  True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://git.heroku.com/sdn2022.git
+']
 
 
 # Application definition
@@ -92,7 +93,7 @@ DATABASES = {
         'PASSWORD':''
     }
 }
-
+DATABASES['default'] = dj_database_url.config(default='postgres://vekdsvavyjypzl:b5c0724907313dafe17d3628a81605457c046a77cd1a96395474001180ad4272@ec2-54-228-125-183.eu-west-1.compute.amazonaws.com:5432/d7nqnlmkhsonhg')
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
